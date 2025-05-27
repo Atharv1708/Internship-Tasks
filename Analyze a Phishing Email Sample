@@ -1,0 +1,73 @@
+# Phishing Email Analysis
+
+## 📧 Sample Email
+-----------------------------------------------------------------------------------------------------------------------------------------------
+From: Apple Support <support@apple-account-security.com>
+Subject: Your Apple ID has been locked
+
+Dear Customer,
+
+We detected Suspicious activity in your Apple ID. As a result, we have temporarily locked your account to protect your information.
+
+To restore access, please verify your identity by clicking the link below:
+
+https://apple.security-lock.com/verify
+
+Failure to verify within 24 hours will result in permanent account suspension.
+
+Thank you for choosing Apple.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Sender's Email Address:
+support@apple-account-security.com
+
+Spoofing? Yes. The domain is not an official Apple domain. Real Apple emails come from @apple.com or @id.apple.com.
+
+* Suspicious Links or Attachments:
+Link:
+https://apple.security-lock.com/verify
+Suspicious Domain: Yes. It's not an Apple domain.
+Often, these redirect to phishing sites that mimic Apple’s login page.
+
+Urgent or Threatening Language:
+“We detected suspicious activity”
+
+“Your account has been locked”
+
+“Failure to verify within 24 hours will result in permanent account suspension”
+
+This pressure is a common scare tactic to get users to act without thinking.
+
+Mismatched URLs:
+Hovering over the link reveals:
+https://apple.security-lock.com/verify
+
+Mismatch? Yes — looks like Apple but is not an official domain.
+
+ Spelling or Grammar Errors:
+“spe ling” Yes - looks likes suspicion has an capital S
+Misused capitalization
+
+Apple Support Team
+## 🕵️ Phishing Traits Summary
+
+| **Trait**                         | **Present?**     |
+|-----------------------------------|------------------|
+| **Spoofed sender address**        | ✅               |
+| **Header discrepancies**          | ✅               |
+| **Suspicious/mismatched URL**     | ✅               |
+| **Urgent/threatening language**   | ✅               |
+| **Poor grammar or spelling**      | ✅               |
+| **Suspicious link or attachment** | ✅ *(link)*      |
+
+---
+
+## 🔍 Notable Findings
+
+- The sender address is spoofed and not from an official Apple domain.
+- The link appears legitimate but redirects to a suspicious site.
+- The email uses urgency and account suspension threats.
+- Grammar and spelling appear correct, which is not always the case.
+
+---
+
